@@ -7,7 +7,8 @@ export default function Page() {
         <Image src="/img3.jpg" width={300} height={300} alt="img1" className="mx-auto items-center"></Image>
 <Link href="/p1" className="text-center">Goto Pages1</Link><br />
 <Link href="/p2" className="text-center">Goto Pages2</Link><br />
-<Link href="/p3" className="text-center">Goto Pages3</Link><br />
+<h2 className="text-center">This is my id 66162110163-8</h2>
+
     </div>
     );
 }

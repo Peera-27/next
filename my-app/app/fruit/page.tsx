@@ -25,7 +25,7 @@ useEffect(() => {
     <button onClick={setbanana}>Banana</button><br />
    
     <Card src="/img1.jpg" title="sungihun" />
-   <Card src="/img2.jpg" title="Trump"></Card>
+   <Card src="/img2.jpg" title="Trump" />
    
    
         </div>

@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 const Menu = [
-    { name: "Home", href: "#" },
-    { name: "About Us", href: "#" },
-    { name: "Page1", href: "/p1" },
-    { name: "Page2", href: "/p2" },
-    { name: "Page3", href: "/p3" },
+    { name: "Home", path: "#" },
+    { name: "About Us", path: "#" },
+    { name: "Page1", path: "/p1" },
+    { name: "Page2", path: "/p2" },
+    { name: "Page3", path: "/p3" },
 ]
 export default function Navbar() {
     return (
@@ -16,19 +16,9 @@ export default function Navbar() {
 
             <div >
             <ul className="flex gap-x-6">
-                <li >
-
-                    <Link href="#">Goto Home</Link>
-                </li>
-                <li>
-                    <Link href="/p1">Goto Page1</Link>
-                </li>
-                <li>
-                    <Link href="/p2">Goto Page2</Link></li>
-                <li>
-                    <Link href="/p3">Goto Page3</Link>
-
-                </li>
+                {Menu.map((menu,index) => (
+                   <li key={index}><Link href={menu.path}>  {menu.name}</Link></li>
+                ))}
             </ul>
             </div>
 
